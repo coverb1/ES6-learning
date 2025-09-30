@@ -40,11 +40,21 @@
 // }
 // console.log(checkall())
 
-function sum(...numbers) {
-    let count=0
+// function sum(...numbers) {
+//     let count=0
+//     for(let num of numbers){
+// count+=num
+//     }
+//     return count
+// }
+// console.log(sum(1,2,4))
+
+function averageunlimitted(...numbers) {
+    let count =0
     for(let num of numbers){
 count+=num
     }
-    return count
+    let average=count/numbers.length
+return average
 }
-console.log(sum(1,2,4))
+console.log(averageunlimitted(2, 3, 3, 5, 7, 10))
